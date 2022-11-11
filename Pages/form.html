@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/CSS/form.css">
+  <link rel="shortcut icon" href="/Images/Logo.png">
+  <meta charset="utf-8">
+  <title>МійТур|Форма</title>
+</head>
+
+<body>
+  <div class="background"></div>
+  
+  <!-- Назва та верхнє меню -->
+  <nav class="menu">
+    <a class="name" href="/index.html">МійТур</a>
+    <a class="tours" href="/Pages/tours.html">ТУРИ</a></li>
+    <a class="about" href="/Pages/about.html">ПРО НАС</a></li>
+    <a class="contact" href="/Pages/contact.html">КОНТАКТИ</a></li>
+    <a class="login" href="/Pages/login.html">УВІЙТИ</a></li>
+  </nav>
+
+  <!-- Форма оформлення туру -->
+  <form class="order-form" action="">
+    <label class="user-name" for="name">Ім'я</label><br>
+    <input type="name" placeholder="Введіть ім'я" name="name" required><br>
+
+    <label class="user-surname" for="name">Прізвище</label><br>
+    <input type="surname" placeholder="Введіть прізвище" name="name" required><br>
+
+    <label class="user-email" for="email">Електронна пошта</label><br>
+    <input type="email" placeholder="Введіть пошту" name="email"><br>
+
+    <label class="user-tel" for="tel">Моб.телефон</label><br>
+    <input type="tel" placeholder="Введіть номер" name="tel" required><br>
+
+    <label class="choose-tour" for="tours">Виберіть тур</label><br>
+    <select name="tours" id="tours" size="1" required>
+      <option value="1">Острів Корфу</option>
+      <option value="2">Карпати</option>
+      <option value="3">Ісландія</option>
+    </select><br>
+
+    <label class="people" for="people">Кількість людей </label><br>
+    <input type="number" name="people" min="1" max="20" maxlength="20"><br>
+
+    <label class="comment" for="comment">Додайте коментар за бажанням</label><br>
+    <textarea id="comment" name="comment" maxlength="150"></textarea>
+    <p class="max-message">Макс. 150 символів</p>
+
+    <input type="submit" value="Замовити тур"><br>
+    <input type="reset" value="Очистити форму"><br>
+    <p class="call-message">Після заповнення форми ми вам передзвонимо для підтверження даних</p>
+  </form>
+
+</body>
+
+</html>

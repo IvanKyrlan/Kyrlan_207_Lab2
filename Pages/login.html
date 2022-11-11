@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/CSS/login.css">
+  <link rel="stylesheet" href="/CSS/media.css">
+  <link rel="shortcut icon" href="/Images/Logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>МійТур|Вхід</title>
+</head>
+
+<body>
+  <main class="main">
+    <div class="container">
+
+      <div class="header-nav">
+        <a class="logo" href="/index.html">МійТур</a>
+        <nav>
+          <ul class="nav-list">
+            <li class="dropdown">
+              <a class="nav-items" href="/Pages/tours.html">Тури</a>
+              <div class="dropdown-content">
+                <a class="dropdown-links" href="/Pages/tours.html#idCorfu">Корфу</a>
+                <a class="dropdown-links" href="/Pages/tours.html#idCarpatians">Карпати</a>
+                <a class="dropdown-links" href="/Pages/tours.html#idIceland">Ісландія</a>
+              </div>
+            </li>
+            <li><a class="nav-items" href="/Pages/about.html">Про нас</a></li>
+            <li><a class="nav-items" href="/Pages/contact.html">Контакти</a></li>
+            <li><a class="nav-items" href="/Pages/login.html">Увійти</a></li>
+          </ul>
+
+          <div class="burger-menu">
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-btn" for="menu-toggle">
+              <span></span>
+            </label>
+
+            <ul class="menubox">
+              <li><a class="menu-item " href="/Pages/tours.html">Тури</a></li>
+              <li><a class="menu-item " href="/Pages/about.html">Про нас</a></li>
+              <li><a class="menu-item " href="/Pages/contact.html">Контакти</a></li>
+              <li><a class="menu-item " href="/Pages/login.html">Увійти</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Форма реєстрації/входу  -->
+      <form class="login-form" action="">
+        <label class="user-name" for="name">Ім'я</label><br>
+        <input type="name" placeholder="Введіть ім'я" name="name" required><br>
+
+        <label class="user-email" for="email">Електронна пошта</label><br>
+        <input type="email" placeholder="Введіть пошту" name="email"><br>
+
+        <label class="user-password" for="password">Пароль (мінімум 6 символів)</label><br>
+        <input class="password" type="password" placeholder="Введіть пароль" name="password" minlength="6" required><br>
+
+        <label class="user-password-repeat" for="repeat-pass">Повторіть пароль</label><br>
+        <input class="repeat-pass" type="password" placeholder="Введіть пароль" name="repeat-pass" minlength="6"
+          required><br>
+
+        <input type="submit" value="Увійти|Зареєструватись"><br>
+        <input type="reset" value="Відмінити">
+      </form>
+
+    </div>
+  </main>
+
+</body>
+
+</html>

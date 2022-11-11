@@ -1,0 +1,407 @@
+* {
+  font-family: 'Montserrat';
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+textarea {
+  padding: 30px;
+  resize: none;
+  outline: none !important;
+  position: absolute;
+  width: 400px;
+  height: 162px;
+  left: 700px;
+  top: 100px;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.09);
+}
+
+
+.background {
+  /* Задній фон */
+  position: absolute;
+  width: 1320px;
+  height: 900px;
+  top: -100px;
+
+  margin: 20px -20px -20px -40px;
+  filter: blur(10px);
+  background: url(/Images/Lake.jpeg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.name {
+  /* Логотип(назва) */
+  position: absolute;
+  width: 140px;
+  height: 50px;
+  left: 100px;
+  top: 20px;
+
+  font-family: 'Lobster';
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #FFFFFF;
+}
+
+.menu {
+  /* Меню */
+  position: absolute;
+  width: 1280px;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+}
+
+.tours {
+  /* Тури */
+  position: absolute;
+  width: 70px;
+  height: 25px;
+  left: 710px;
+  top: 35px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.about {
+  /* Про нас */
+  position: absolute;
+  width: 110px;
+  height: 25px;
+  left: 800px;
+  top: 35px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contact {
+  /* Контакти */
+  position: absolute;
+  width: 130px;
+  height: 25px;
+  left: 930px;
+  top: 35px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.login {
+  /* Увійти */
+  position: absolute;
+  width: 90px;
+  height: 25px;
+  left: 1080px;
+  top: 35px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+form {
+  position: absolute;
+  width: 585px;
+  height: 580px;
+  left: 100px;
+  top: 125px;
+
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.09);
+}
+
+label {
+  left: 50px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: block;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  position: absolute;
+
+  color: #FFFFFF;
+}
+
+input {
+  position: absolute;
+  left: 50px;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  outline: none !important;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-name {
+  position: absolute;
+  top: 50px;
+}
+
+input[type=name] {
+  position: absolute;
+  display: block;
+  width: 180px;
+  height: 30px;
+  top: 80px;
+  padding: 10px;
+
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 50px;
+}
+
+.user-surname {
+  position: absolute;
+  top: 120px;
+}
+
+input[type=surname] {
+  position: absolute;
+  width: 180px;
+  height: 30px;
+  top: 155px;
+  padding: 10px;
+
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+}
+
+.user-email {
+  position: absolute;
+  top: 200px;
+}
+
+input[type=email] {
+  /* Rectangle 4 */
+  position: absolute;
+  display: block;
+  width: 180px;
+  height: 30px;
+  left: 50px;
+  top: 230px;
+  padding: 10px;
+
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+}
+
+.user-tel {
+  position: absolute;
+  top: 270px;
+}
+
+input[type=tel] {
+  position: absolute;
+  display: block;
+  width: 180px;
+  height: 30px;
+  left: 50px;
+  top: 305px;
+  padding: 10px;
+
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+}
+
+.choose-tour {
+  position: absolute;
+  top: 345px;
+}
+
+select {
+  position: absolute;
+  top: 380px;
+  left: 50px;
+  padding: 5px;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  outline: none !important;
+}
+
+.people {
+  position: absolute;
+  top: 420px;
+}
+
+input[type=number] {
+  position: absolute;
+  top: 455px;
+  padding: 5px;
+}
+
+.comment {
+  position: absolute;
+  width: 400px;
+  height: 24px;
+  left: 700px;
+  top: 50px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.max-message {
+  position: absolute;
+  width: 150px;
+  height: 15px;
+  left: 920px;
+  top: 230px;
+
+  font-weight: 350;
+  font-size: 12px;
+  line-height: 15px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: rgba(255, 255, 255, 0.5);
+
+}
+
+input[type=reset] {
+  position: absolute;
+  display: block;
+  padding: 20px;
+  width: 180px;
+  height: 20px;
+  left: 350px;
+  top: 35px;
+  border: none;
+  background: none;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #FFFFFF;
+}
+
+input[type=submit] {
+  position: absolute;
+  top: 180px;
+  left: 300px;
+  width: 215px;
+  height: 45px;
+
+  border: none;
+  background: #FFD53F;
+  color: #483333;
+
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  border-radius: 300px;
+  position: relative;
+
+  box-shadow: 3px 3px 4px 4px rgba(0, 0, 0, 0.18);
+  box-sizing: border-box;
+  transition: all 500ms ease;
+}
+
+
+input[type=submit]:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0 3px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.call-message {
+  position: absolute;
+  width: 470px;
+  height: 20px;
+  left: 58px;
+  top: 525px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
