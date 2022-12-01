@@ -1,85 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="ua">
 
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/CSS/tours.css">
-  <link rel="shortcut icon" href="/Images/Logo.png">
-  <meta charset="utf-8">
-  <title>МійТур|Тури</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>МійТур</title>
+    <link rel="shortcut icon" href="/Images/Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@500&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/64ed6564b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS/tours.css">
+    <link rel="stylesheet" href="/CSS/media.css">
 </head>
 
 <body>
-  <main>
-    <div class="background"></div>
-    <!-- Назва та верхнє меню -->
-    <nav class="menu">
-      <a class="name" href="/index.html">МійТур</a>
-      <a class="tours" href="/Pages/tours.html">ТУРИ</a></li>
-      <a class="about" href="/Pages/about.html">ПРО НАС</a></li>
-      <a class="contact" href="/Pages/contact.html">КОНТАКТИ</a></li>
-      <a class="login" href="/Pages/login.html">УВІЙТИ</a></li>
-    </nav>
+    <a href="#" class="topbutton"><i class="fa-solid fa-angle-up" style="font-size: 40px;"></i></a>
+    <header>
+        <!-- Назва та верхнє меню -->
+        <div class="container">
+            <div class="header-nav">
+                <a class="logo" href="/index.html">МійТур</a>
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li class="dropdown">
+                            <a class="nav-items" href="/Pages/tours.html">Тури <i
+                                    class="fa-solid fa-angle-down"></i></a>
+                            <div class="dropdown-content">
+                                <a class="dropdown-links" href="/Pages/tours.html#idCorfu">Корфу</a>
+                                <a class="dropdown-links" href="/Pages/tours.html#idCarpatians">Карпати</a>
+                                <a class="dropdown-links" href="/Pages/tours.html#idIceland">Ісландія</a>
+                            </div>
+                        </li>
+                        <li><a class="nav-items" href="/Pages/about.html">Про нас</a></li>
+                        <li><a class="nav-items" href="/Pages/contact.html">Контакти</a></li>
+                        <li><a class="nav-items" href="/Pages/login.html">Увійти</a></li>
+
+                        <ul class="burger-contact">
+                            <li><a href="tel:+38050000000"><i class="fa-solid fa-phone"></i> +380
+                                    (50)
+                                    000
+                                    000</a>
+                            </li>
+                            <li><a href="tel:+38095000000"><i class="fa-solid fa-phone"></i> +380
+                                    (95)
+                                    000
+                                    000</a>
+                            </li>
+                            <li><a href="tel:+38067000000"><i class="fa-solid fa-phone"></i> +380
+                                    (67)
+                                    000
+                                    000</a>
+                            </li>
+                        </ul>
+
+                        <ul class="burger-socials">
+                            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="https://web.telegram.org/"><i class="fa-brands fa-telegram"></i></a></li>
+                        </ul>
+
+                    </ul>
+                    <button id="nav-btn" class="nav-button">
+                        <img id="nav-btn-img" src="/Images/Burger.svg" alt="Nav button">
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
 
     <!-- Інформація про тури -->
-    <div class="corfu" id="idCorfu">
-      <h3 class="corfu-island">Острів Корфу(Греція)</h3>
-      <div class="corfu_img"></div>
-      <p class="corfu-text">Запрошуємо вас на відпочинок на безмежно прекрасний грецький острів Корфу!
-        Най-"італійський",
-        най-"релаксовий", найзеленіший - і ще багато "най-", адже цей грецький острів ніби уособлення краси, що
-        розливається навколо, ласкавого теплого моря, безтурботного спокою і комфорту. Саме те, чого вимагає
-        зараз ваша душа</p>
-      <a href="/Pages/form.html"><button class="corfu-button">Замовити тур</button></a>
-    </div>
+    <main>
+        <div class="container">
+            <div class="tour-block" id="idCorfu">
+                <div><img class="tour-img" src="/Images/Corfu.jpg" alt="Image Not Found"></div>
+                <div>
+                    <h3 class="tour-header">Острів Корфу (Греція)</h3>
+                    <p class="tour-text">Запрошуємо вас на відпочинок на безмежно прекрасний грецький острів Корфу!
+                        Най-"італійський",
+                        най-"релаксовий", найзеленіший - і ще багато "най-", адже цей грецький острів ніби уособлення
+                        краси,
+                        що
+                        розливається навколо, ласкавого теплого моря, безтурботного спокою і комфорту. Саме те, чого
+                        вимагає
+                        зараз ваша душа</p>
+                    <a class="order-button" href="/Pages/form.html">Замовити тур</a>
+                </div>
+            </div>
 
-    <div class="carpatians" id="idCarpatians">
-      <h3 class="carpatians-ukraine">Карпати(Україна)</h3>
-      <div class="carpatians_img"></div>
-      <p class="carpatians-text">Навіть звичайна прогулянка по Карпатському лісу подарує вам багато приємних
-        хвилин. Ви зможете надихатися
-        киснем, чистим прозорим повітрям, забути про все негативне і по-новому побачити світ.
-        Лише в горах ви зможете вдихнути на повні груди і забути про осінню депресію, адже тут осінь – це
-        суцільна насолода.
-        Це найкращий час для відпочинку в Карпатах, в тиші й спокої, наодинці з природою. Осінь розбудить ваші
-        почуття і приголомшить розмаїттям барв.</p>
-      <a href="/Pages/form.html"><button class="carpatians-button">Замовити тур</button></a>
-    </div>
+            <div class="tour-block" id="idCarpatians">
+                <div><img class="tour-img" src="/Images/Carpatians.jpg" alt="Image Not Found"></div>
+                <div>
+                    <h3 class="tour-header">Карпати (Україна)</h3>
+                    <p class="tour-text">Навіть звичайна прогулянка по Карпатському лісу подарує вам багато приємних
+                        хвилин. Ви зможете надихатися
+                        киснем, чистим прозорим повітрям, забути про все негативне і по-новому побачити світ.
+                        Лише в горах ви зможете вдихнути на повні груди і забути про осінню депресію, адже тут осінь
+                        –
+                        це
+                        суцільна насолода.
+                        Це найкращий час для відпочинку в Карпатах, в тиші й спокої, наодинці з природою. Осінь
+                        розбудить
+                        ваші
+                        почуття і приголомшить розмаїттям барв.</p>
+                    <a class="order-button" href="/Pages/form.html">Замовити тур</a>
+                </div>
+            </div>
 
-    <div class="iceland" id="idIceland">
-      <h3 class="iceland-tour">Тур по Ісландії</h3>
-      <div class="iceland_img"></div>
-      <p class="iceland-text">Ісландія – земля "льоду і вогню", прекрасна і неповторна... Приголомшлива північна
-        казка.
-        Природа в цьому краї вражає своєю красою – величні льодовики, засніжені гори, діючі вулкани, химерні
-        прибережні скелі та марсіанські пейзажі. Особливо цікаво спостерігати контраст ландшафту, як льодовики і
-        фіорди змінюються вулканами, що сягають висоти 2110 метрів.</p>
-      <a href="/Pages/form.html"><button class="iceland-button">Замовити тур</button></a>
-    </div>
-  </main>
+            <div class="tour-block" id="idIceland">
+                <div><img class="tour-img" src="/Images/Iceland.jpg" alt="Image Not Found"></div>
+                <div>
+                    <h3 class="tour-header">Тур по Ісландії</h3>
+                    <p class="tour-text">Ісландія – земля "льоду і вогню", прекрасна і неповторна... Приголомшлива
+                        північна
+                        казка.
+                        Природа в цьому краї вражає своєю красою – величні льодовики, засніжені гори, діючі вулкани,
+                        химерні
+                        прибережні скелі та марсіанські пейзажі. Особливо цікаво спостерігати контраст ландшафту, як
+                        льодовики і
+                        фіорди змінюються вулканами, що сягають висоти 2110 метрів.</p>
+                    <a class="order-button" href="/Pages/form.html">Замовити тур</a>
+                </div>
+            </div>
+        </div>
+    </main>
 
-  <!-- Нижній блок -->
-  <footer class="footer">
-    <ul class="foot-menu">
-      <li><a href="/Pages/tours.html">ТУРИ</a></li>
-      <li><a href="/Pages/about.html">ПРО НАС</a></li>
-      <li><a href="/Pages/contact.html">КОНТАКТИ</a></li>
-    </ul>
+    <!-- Нижній блок  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="foot-elements">
+                <ul class="foot-nav">
+                    <li><a href="/Pages/tours.html">Тури</a></li>
+                    <li><a href="/Pages/about.html">Про нас</a></li>
+                    <li><a href="/Pages/contact.html">Контакти</a></li>
+                </ul>
 
-    <ul class="foot-contact">
-      <li><span class="glyphicon glyphicon-earphone"></span> +380 (50) 000 000 </li>
-      <li><span class="glyphicon glyphicon-earphone"></span> +380 (95) 000 000 </li>
-      <li><span class="glyphicon glyphicon-earphone"></span> +380 (67) 000 000 </li>
-    </ul>
-
-    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-    <a href="https://web.telegram.org/" class="fa fa-telegram"></a> <br>
-    <a class="policy"
-      href="https://www.privacypolicygenerator.info/live.php?token=Zpa5N97HQMMoh6FBrnJC4n3oF0Xtc7j4">Політика
-      конфіденційності</a>
-  </footer>
+                <address>
+                    <ul class="foot-contact">
+                        <li><a href="tel:+38050000000"><i class="fa-solid fa-phone"></i> +380
+                                (50)
+                                000
+                                000</a>
+                        </li>
+                        <li><a href="tel:+38095000000"><i class="fa-solid fa-phone"></i> +380
+                                (95)
+                                000
+                                000</a>
+                        </li>
+                        <li><a href="tel:+38067000000"><i class="fa-solid fa-phone"></i> +380
+                                (67)
+                                000
+                                000</a>
+                        </li>
+                    </ul>
+                </address>
+                <address>
+                    <ul class="foot-socials">
+                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://web.telegram.org/"><i class="fa-brands fa-telegram"></i></a></li>
+                    </ul>
+                    <a href="https://www.privacypolicygenerator.info/live.php?token=Zpa5N97HQMMoh6FBrnJC4n3oF0Xtc7j4">Політика
+                        конфіденційності</a>
+                </address>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

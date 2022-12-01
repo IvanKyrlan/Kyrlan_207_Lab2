@@ -1,102 +1,176 @@
 <!DOCTYPE html>
-<html>
+<html lang="ua">
 
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/CSS/about.css">
-  <link rel="shortcut icon" href="/Images/Logo.png">
   <meta charset="utf-8">
-  <title>МійТур|Про нас</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>МійТур</title>
+  <link rel="shortcut icon" href="/Images/Logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@500&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/64ed6564b5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/CSS/about.css">
+  <link rel="stylesheet" href="/CSS/media.css">
 </head>
 
 <body>
-  <main class="main">
-    <div class="background"></div>
-
+  <a href="#" class="topbutton"><i class="fa-solid fa-angle-up" style="font-size: 40px;"></i></a>
+  <header>
     <!-- Назва та верхнє меню -->
-    <nav class="menu">
-      <a class="name" href="/index.html">МійТур</a>
-      <a class="tours" href="/Pages/tours.html">ТУРИ</a></li>
-      <a class="about" href="/Pages/about.html">ПРО НАС</a></li>
-      <a class="contact" href="/Pages/contact.html">КОНТАКТИ</a></li>
-      <a class="login" href="/Pages/login.html">УВІЙТИ</a></li>
-    </nav>
+    <div class="container">
+      <div class="header-nav">
+        <a class="logo" href="/index.html">МійТур</a>
+        <nav class="nav" id="nav">
+          <ul class="nav-list">
+            <li class="dropdown">
+              <a class="nav-items" href="/Pages/tours.html">Тури <i class="fa-solid fa-angle-down"></i></a>
+              <div class="dropdown-content">
+                <a class="dropdown-links" href="/Pages/tours.html#idCorfu">Корфу</a>
+                <a class="dropdown-links" href="/Pages/tours.html#idCarpatians">Карпати</a>
+                <a class="dropdown-links" href="/Pages/tours.html#idIceland">Ісландія</a>
+              </div>
+            </li>
+            <li><a class="nav-items" href="/Pages/about.html">Про нас</a></li>
+            <li><a class="nav-items" href="/Pages/contact.html">Контакти</a></li>
+            <li><a class="nav-items" href="/Pages/login.html">Увійти</a></li>
 
-    <div class="slogan-block">
-      <h1 class="slogan-text">Життя одне - <br>час линути у мандри!</h1>
+            <ul class="burger-contact">
+              <li><a href="tel:+38050000000"><i class="fa-solid fa-phone"></i> +380
+                  (50)
+                  000
+                  000</a>
+              </li>
+              <li><a href="tel:+38095000000"><i class="fa-solid fa-phone"></i> +380
+                  (95)
+                  000
+                  000</a>
+              </li>
+              <li><a href="tel:+38067000000"><i class="fa-solid fa-phone"></i> +380
+                  (67)
+                  000
+                  000</a>
+              </li>
+            </ul>
+
+            <ul class="burger-socials">
+              <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="https://web.telegram.org/"><i class="fa-brands fa-telegram"></i></a></li>
+            </ul>
+
+          </ul>
+          <button id="nav-btn" class="nav-button">
+            <img id="nav-btn-img" src="/Images/Burger.svg" alt="Nav button">
+          </button>
+        </nav>
+      </div>
     </div>
+  </header>
 
-    <!-- Інформація про нас -->
-    <section class="about-block">
-      <h2 class="about-text">Чому ви маєте обрати саме нас?<br>Дуже просто - з нами вигідно!</h2>
-      <div class="experience">
-        <span class="glyphicon glyphicon-map-marker"></span>
-        <h3 class="experience-text">ДОСВІЧЕНІСТЬ</h3>
-        <p class="experience-info">Досвід, довіра туристів і співпраця з найкращими партнерами.Ми динамічні,
-          постійно розвиваємося і покращуємо тури, відкриваємо нове і пропонуємо особливе</p>
-      </div>
+  <!-- Інформація про нас -->
+  <main>
+    <div class="container">
+      <section class="about-block">
+        <h2 class="about-text">Чому ви маєте обрати саме нас?<br>Дуже просто - з нами вигідно!</h2>
+        <div class="about-content">
+          <div class="about-section">
+            <i class="fa-solid fa-magnifying-glass" style="font-size: 50px;"></i>
+            <h3 class="about-heading">Досвіченість</h3>
+            <p>Досвід, довіра туристів і співпраця з найкращими партнерами.Ми динамічні,
+              постійно розвиваємося і покращуємо тури, відкриваємо нове і пропонуємо особливе</p>
+          </div>
 
-      <div class="quality">
-        <span class="glyphicon glyphicon-thumbs-up"></span>
-        <h3 class="quality-text">ЯКІСТЬ В УСЬОМУ</h3>
-        <p class="quality-info">Спілкування, індивідуальний підхід, увага до дрібниць та нюансів, правильна
-          логістика, якість готелів, оперативність, інформаційний супровід та чесна ціна</p>
-      </div>
+          <div class="about-section">
+            <i class="fa-regular fa-thumbs-up" style="font-size: 50px;"></i>
+            <h3 class="about-heading">Якість у всьому</h3>
+            <p>Спілкування, індивідуальний підхід, увага до дрібниць та нюансів, правильна
+              логістика, якість готелів, оперативність, інформаційний супровід та чесна ціна</p>
+          </div>
 
-      <div class="guide">
-        <span class="glyphicon glyphicon-star-empty"></span>
-        <h3 class="guide-text">НАЙКРАЩІ ГІДИ</h3>
-        <p class="guide-info">Досвідчені, заглиблені у матеріал, закохані у свою роботу та уважні до людей гіди
-          супроводжують усі наші тури</p>
-      </div>
-    </section>
+          <div class="about-section">
+            <i class="fa-regular fa-star" style="font-size: 50px;"></i>
+            <h3 class="about-heading">Найкращі гіди</h3>
+            <p>Досвідчені, заглиблені у матеріал, закохані у свою роботу та уважні до людей гіди
+              супроводжують усі наші тури</p>
+          </div>
+        </div>
+      </section>
 
-    <!-- Відгуки від клієнтів -->
-    <section class="feedback">
-      <h2 class="feedback-text">Відгуки від наших клієнтів</h2>
-      <div class="client1">
-        <p class="client1-name">Андрій</p>
-        <div class="client1_img"></div>
-        <q class="client1-message">Щиро дякую турагенству “МійТур” за чудовий сервіс та незабутній
-          відпочинок</q>
-      </div>
-      <div class="client2">
-        <p class="client2-name">Оксана</p>
-        <div class="client2_img"></div>
-        <q class="client2-message">Провела прекрасні канікули в компанії друзів. Якісне обслуговування та
-          менеджмент. Рекомендую!</q>
-      </div>
-      <div class="client3">
-        <p class="client3-name">Марія</p>
-        <div class="client3_img"></div>
-        <q class="client3-message">Найкращий тур в моєму житті! Неймовірна краса та види, я просто в захваті.
-          Неодмінно ще буду звертатись до “МійТур” за відпочинком. Дякую!</q>
-      </div>
-    </section>
+      <!-- Відгуки від клієнтів -->
+      <section class="feedback">
+        <h2 class="feedback-text">Відгуки від наших клієнтів</h2>
+        <div class="feedback-block">
+          <div class="feedback-box">
+            <div><img class="client-img" src="/Images/Client1.jpg"></div>
+            <div>
+              <p class="client-name">Андрій</p>
+              <q class="client-text"> Щиро дякую турагенству “МійТур” за чудовий сервіс та незабутній
+                відпочинок </q>
+            </div>
+          </div>
+          <div class="feedback-box">
+            <div><img class="client-img" src="/Images/Client2.jpg"></div>
+            <div>
+              <p class="client-name">Оксана</p>
+              <q class="client-text"> Провела прекрасні канікули в компанії друзів. Якісне обслуговування та
+                менеджмент. Рекомендую! </q>
+            </div>
+          </div>
+          <div class="feedback-box">
+            <div><img class="client-img" src="/Images/Client3.jpg"></div>
+            <div>
+              <p class="client-name">Марія</p>
+              <q class="client-text"> Найкращий тур в моєму житті! Неймовірна краса та види, я просто в захваті.
+                Неодмінно ще буду звертатись до “МійТур” за відпочинком. Дякую! </q>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
-  <!-- Нижній блок -->
+
+  <!-- Нижній блок  -->
   <footer class="footer">
-    <ul class="foot-menu">
-      <li><a href="/Pages/tours.html">ТУРИ</a></li>
-      <li><a href="/Pages/about.html">ПРО НАС</a></li>
-      <li><a href="/Pages/contact.html">КОНТАКТИ</a></li>
-    </ul>
+    <div class="container">
+      <div class="foot-elements">
+        <ul class="foot-nav">
+          <li><a href="/Pages/tours.html">Тури</a></li>
+          <li><a href="/Pages/about.html">Про нас</a></li>
+          <li><a href="/Pages/contact.html">Контакти</a></li>
+        </ul>
 
-    <ul class="foot-contact">
-      <li><span class="glyphicon glyphicon-earphone"></span> +380 (50) 000 000 </li>
-      <li><span class="glyphicon glyphicon-earphone"></span> +380 (95) 000 000 </li>
-      <li><span class="glyphicon glyphicon-earphone"></span> +380 (67) 000 000 </li>
-    </ul>
-
-    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-    <a href="https://web.telegram.org/" class="fa fa-telegram"></a> <br>
-    <a class="policy"
-      href="https://www.privacypolicygenerator.info/live.php?token=Zpa5N97HQMMoh6FBrnJC4n3oF0Xtc7j4">Політика
-      конфіденційності</a>
+        <address>
+          <ul class="foot-contact">
+            <li><a href="tel:+38050000000"><i class="fa-solid fa-phone"></i> +380
+                (50)
+                000
+                000</a>
+            </li>
+            <li><a href="tel:+38095000000"><i class="fa-solid fa-phone"></i> +380
+                (95)
+                000
+                000</a>
+            </li>
+            <li><a href="tel:+38067000000"><i class="fa-solid fa-phone"></i> +380
+                (67)
+                000
+                000</a>
+            </li>
+          </ul>
+        </address>
+        <address>
+          <ul class="foot-socials">
+            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://web.telegram.org/"><i class="fa-brands fa-telegram"></i></a></li>
+          </ul>
+          <a href="https://www.privacypolicygenerator.info/live.php?token=Zpa5N97HQMMoh6FBrnJC4n3oF0Xtc7j4">Політика
+            конфіденційності</a>
+        </address>
+      </div>
+    </div>
   </footer>
-
+  <script src="/js/main.js"></script>
 </body>
 
 </html>

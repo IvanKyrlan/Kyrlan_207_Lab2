@@ -1,357 +1,184 @@
-* {
-  font-family: 'Montserrat';
+*,
+*:after,
+*:before {
   font-style: normal;
-  color: #FFFFFF;
+  text-decoration: none;
+  text-align: unset;
+  list-style-type: none;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 a:hover {
   text-decoration: none;
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url(/Images/Lake\ Blur.jpg) no-repeat;
+  background-size: cover;
+
+  color: #fff;
+}
+
+main {
+  padding-top: 30px;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Lobster', sans-serif;
+  font-size: 40px;
+  color: #fff;
+}
+
+.logo:hover {
+  color: #fff;
 }
 
 nav a:hover {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #fff;
 }
 
-.background {
-  /* Задній фон */
-  position: absolute;
-  width: 1320px;
-  height: 920px;
-  top: -100px;
-
-
-  margin: 20px -20px -20px -20px;
-  filter: blur(10px);
-  background: url(/Images/Lake.jpeg);
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
-
-.name {
-  /* Логотип(назва) */
-  position: absolute;
-  width: 140px;
-  height: 50px;
-  left: 100px;
-  top: 20px;
-
-  font-family: 'Lobster';
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 50px;
-
+.nav-list {
   display: flex;
-  align-items: center;
-  text-align: center;
+  column-gap: 50px;
+  margin: 0 auto;
+  font-size: 20px;
   letter-spacing: 0.1em;
+  text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: #fff;
 }
 
-.menu {
-  /* Меню */
-  position: absolute;
-  width: 1280px;
-  height: 100px;
-  left: 0px;
-  top: 0px;
+.dropdown {
+  position: relative;
 }
 
-.tours {
-  /* Тури */
+.dropdown-content {
+  display: none;
   position: absolute;
-  width: 70px;
-  height: 25px;
-  left: 710px;
-  top: 35px;
-
-  font-weight: 600;
   font-size: 18px;
-  line-height: 24px;
+  z-index: 1;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  line-height: 40px;
+  padding: 10px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.09);
+  backdrop-filter: blur(5px);
 
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  color: rgba(255, 255, 255, 0.8);
+  color: #fff;
 }
 
-.about {
-  /* Про нас */
-  position: absolute;
-  width: 110px;
-  height: 25px;
-  left: 800px;
-  top: 35px;
-
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  color: rgba(255, 255, 255, 0.8);
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-.contact {
-  /* Контакти */
-  position: absolute;
-  width: 130px;
-  height: 25px;
-  left: 930px;
-  top: 35px;
-
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  color: rgba(255, 255, 255, 0.8);
+.nav-items:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.login {
-  /* Увійти */
-  position: absolute;
-  width: 90px;
-  height: 25px;
-  left: 1080px;
-  top: 35px;
+.nav-items {
+  color: #fff;
+}
 
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
+a.dropdown-links:active,
+a.dropdown-links {
+  text-decoration: none;
+  color: #fff;
+}
 
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
+a.dropdown-links:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
 
-  color: rgba(255, 255, 255, 0.8);
+.burger-contact {
+  display: none;
+}
+
+.burger-socials {
+  display: none;
+}
+
+.nav-button {
+  position: fixed;
+  display: none;
+  border: none;
+  background-color: unset;
 }
 
 .connect {
-  position: absolute;
-  width: 450px;
-  height: 50px;
-  left: 420px;
-  top: 100px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 49px;
-  display: flex;
-  align-items: center;
   text-align: center;
+  margin-top: 80px;
   letter-spacing: 0.1em;
-
-  color: #FFFFFF;
+  font-size: 40px;
 }
 
 .contact-block {
-  position: absolute;
-  width: 1100px;
-  height: 400px;
-  left: 100px;
-  top: 250px;
-
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
-  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.09);
-}
-
-.tel {
-  /* Контакти */
-  position: absolute;
-  width: 200px;
-  height: 224px;
-  left: 100px;
-  top: 50px;
-}
-
-.tel-info {
-  /* Group 1 */
-  position: absolute;
-  width: 200px;
-  height: 150px;
-  left: -15px;
-  top: 70px;
-}
-
-.glyphicon-phone {
-  position: absolute;
-  font-size: 50px;
-  left: 80px;
-  top: 0px;
-}
-
-li {
-  font-weight: 500;
-  font-size: 16px;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+  padding: 30px;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.09);
+  color: #fff;
+}
+
+.contact-info {
   text-align: center;
-  line-height: 60px;
-  list-style-type: none;
-  text-transform: uppercase;
-}
-
-.mail {
-  /* Пошта */
-  position: absolute;
-  width: 350px;
-  height: 200px;
-  left: 370px;
-  top: 50px;
-}
-
-.mail1 {
-  position: absolute;
-  left: 70px;
-}
-
-.mail2 {
-  position: absolute;
-  left: 35px;
-  top: 60px;
-}
-
-.glyphicon-envelope {
-  position: absolute;
-  font-size: 50px;
-  left: 150px;
-  top: 0px;
-}
-
-.mail-info {
-  position: absolute;
-  width: 200px;
-  height: 150px;
-  left: -15px;
-  top: 70px;
-}
-
-.address {
-  /* Адреса */
-  position: absolute;
-  width: 400px;
-  height: 300px;
-  right: 30px;
-  top: 50px;
-}
-
-.glyphicon-map-marker {
-  /* Location */
-  position: absolute;
-  font-size: 50px;
-  left: 160px;
-  top: 0px;
-}
-
-.address-location {
-  left: 70px;
+  line-height: 50px;
+  font-size: 18px;
 }
 
 iframe {
-  position: absolute;
-  top: 50px;
-  left: 70px;
   border-radius: 50px;
 }
 
-.address-info {
-  top: 70px;
-  position: absolute;
-}
-
 .socials-text {
-  /* Наші соціальні мережі */
-  position: absolute;
-  width: 440px;
-  height: 37px;
-  left: 430px;
-  top: 670px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 37px;
-
-  display: flex;
-  align-items: center;
   text-align: center;
+  margin-top: 40px;
   letter-spacing: 0.1em;
-
-  color: #FFFFFF;
+  font-size: 30px;
 }
 
 .socials {
-  position: absolute;
-  width: 200px;
-  height: 40px;
-  left: 540px;
-  top: 750px;
-}
-
-.fa-instagram {
-  /* Instagram Icon */
-  position: absolute;
-  font-size: 25px;
-  left: 45px;
-
-  color: #ffffff;
-}
-
-.fa-facebook {
-  /* Facebook Icon */
-  position: absolute;
-  font-size: 25px;
-  left: 93px;
-  color: #ffffff;
-}
-
-.fa-telegram {
-  /* Telegram Icon */
-  position: absolute;
-  font-size: 25px;
-  right: 45px;
-  color: #ffffff;
-}
-
-.polit {
-  /* Політика конфіденційності */
-  position: absolute;
-  width: 160px;
-  height: 25px;
-  left: 565px;
-  top: 790px;
-
-
-  font-weight: 500;
-  font-size: 9px;
-  line-height: 11px;
-  display: flex;
-  align-items: center;
   text-align: center;
+  padding: 20px;
   letter-spacing: 0.1em;
-  text-decoration-line: none;
-
-  color: #FFFFFF;
+  font-size: 40px;
 }

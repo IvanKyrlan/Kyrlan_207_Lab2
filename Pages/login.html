@@ -1,78 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="ua">
 
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/CSS/login.css">
-  <link rel="stylesheet" href="/CSS/media.css">
-  <link rel="shortcut icon" href="/Images/Logo.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <title>МійТур|Вхід</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>МійТур</title>
+    <link rel="shortcut icon" href="/Images/Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@500&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/64ed6564b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS/login.css">
+    <link rel="stylesheet" href="/CSS/media.css">
 </head>
 
 <body>
-  <main class="main">
-    <div class="container">
+    <main>
+        <!-- Назва та верхнє меню -->
+        <div class="container">
+            <div class="header-nav">
+                <a class="logo" href="/index.html">МійТур</a>
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li class="dropdown">
+                            <a class="nav-items" href="/Pages/tours.html">Тури <i
+                                    class="fa-solid fa-angle-down"></i></a>
+                            <div class="dropdown-content">
+                                <a class="dropdown-links" href="/Pages/tours.html#idCorfu">Корфу</a>
+                                <a class="dropdown-links" href="/Pages/tours.html#idCarpatians">Карпати</a>
+                                <a class="dropdown-links" href="/Pages/tours.html#idIceland">Ісландія</a>
+                            </div>
+                        </li>
+                        <li><a class="nav-items" href="/Pages/about.html">Про нас</a></li>
+                        <li><a class="nav-items" href="/Pages/contact.html">Контакти</a></li>
+                        <li><a class="nav-items" href="/Pages/login.html">Увійти</a></li>
 
-      <div class="header-nav">
-        <a class="logo" href="/index.html">МійТур</a>
-        <nav>
-          <ul class="nav-list">
-            <li class="dropdown">
-              <a class="nav-items" href="/Pages/tours.html">Тури</a>
-              <div class="dropdown-content">
-                <a class="dropdown-links" href="/Pages/tours.html#idCorfu">Корфу</a>
-                <a class="dropdown-links" href="/Pages/tours.html#idCarpatians">Карпати</a>
-                <a class="dropdown-links" href="/Pages/tours.html#idIceland">Ісландія</a>
-              </div>
-            </li>
-            <li><a class="nav-items" href="/Pages/about.html">Про нас</a></li>
-            <li><a class="nav-items" href="/Pages/contact.html">Контакти</a></li>
-            <li><a class="nav-items" href="/Pages/login.html">Увійти</a></li>
-          </ul>
+                        <ul class="burger-contact">
+                            <li><a href="tel:+38050000000"><i class="fa fa-phone" aria-hidden="true"></i> +380
+                                    (50)
+                                    000
+                                    000</a>
+                            </li>
+                            <li><a href="tel:+38095000000"><i class="fa fa-phone" aria-hidden="true"></i> +380
+                                    (95)
+                                    000
+                                    000</a>
+                            </li>
+                            <li><a href="tel:+38067000000"><i class="fa fa-phone" aria-hidden="true"></i> +380
+                                    (67)
+                                    000
+                                    000</a>
+                            </li>
+                        </ul>
 
-          <div class="burger-menu">
-            <input id="menu-toggle" type="checkbox" />
-            <label class="menu-btn" for="menu-toggle">
-              <span></span>
-            </label>
+                        <ul class="burger-socials">
+                            <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://web.telegram.org/"><i class="fa fa-telegram"></i></a></li>
+                        </ul>
 
-            <ul class="menubox">
-              <li><a class="menu-item " href="/Pages/tours.html">Тури</a></li>
-              <li><a class="menu-item " href="/Pages/about.html">Про нас</a></li>
-              <li><a class="menu-item " href="/Pages/contact.html">Контакти</a></li>
-              <li><a class="menu-item " href="/Pages/login.html">Увійти</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+                    </ul>
 
-      <!-- Форма реєстрації/входу  -->
-      <form class="login-form" action="">
-        <label class="user-name" for="name">Ім'я</label><br>
-        <input type="name" placeholder="Введіть ім'я" name="name" required><br>
+                    <button id="nav-btn" class="nav-button">
+                        <img id="nav-btn-img" src="/Images/Burger.svg" alt="Nav button">
+                    </button>
+                </nav>
+            </div>
 
-        <label class="user-email" for="email">Електронна пошта</label><br>
-        <input type="email" placeholder="Введіть пошту" name="email"><br>
+            <!-- Форма реєстрації/входу  -->
+            <form class="login-form" action="">
+                <label class="user-name" for="username">Ім'я</label>
+                <input type="text" id="username" placeholder="Введіть ім'я" required>
 
-        <label class="user-password" for="password">Пароль (мінімум 6 символів)</label><br>
-        <input class="password" type="password" placeholder="Введіть пароль" name="password" minlength="6" required><br>
+                <label class="user-email" for="email">Електронна пошта</label>
+                <input type="email" id="email" placeholder="Введіть пошту">
 
-        <label class="user-password-repeat" for="repeat-pass">Повторіть пароль</label><br>
-        <input class="repeat-pass" type="password" placeholder="Введіть пароль" name="repeat-pass" minlength="6"
-          required><br>
+                <label class="user-password" for="password">Пароль</label>
+                <input type="password" id="password" placeholder="Введіть пароль" minlength="8" required>
 
-        <input type="submit" value="Увійти|Зареєструватись"><br>
-        <input type="reset" value="Відмінити">
-      </form>
+                <label class="user-password-repeat" for="repeat-pass">Повторіть пароль</label>
+                <input type="password" id="repeat-pass" placeholder="Введіть пароль" minlength="8" required>
 
-    </div>
-  </main>
+                <input type="submit" value="Увійти">
+                <input type="reset" value="Відмінити">
+            </form>
 
+        </div>
+    </main>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

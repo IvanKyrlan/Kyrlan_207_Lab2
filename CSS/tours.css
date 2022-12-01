@@ -1,480 +1,247 @@
-* {
-  font-family: 'Montserrat';
+*,
+*:after,
+*:before {
   font-style: normal;
+  text-decoration: none;
+  text-align: unset;
+  list-style-type: none;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 a:hover {
   text-decoration: none;
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url(/Images/Lake\ Blur.jpg) no-repeat;
+  background-size: cover;
+}
+
+header {
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.topbutton {
+  position: fixed;
+  top: 50%;
+  right: -10px;
+  text-decoration: none !important;
+  border-radius: 10px;
+  padding: 10px 15px;
+  letter-spacing: 0.1em;
+
+  cursor: pointer;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+}
+
+a.topbutton:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Lobster', sans-serif;
+  font-size: 40px;
+  color: #fff;
+}
+
+.logo:hover {
+  color: #fff;
 }
 
 nav a:hover {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #fff;
+}
+
+.nav-list {
+  display: flex;
+  column-gap: 50px;
+  margin: 0 auto;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #fff;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  line-height: 40px;
+  padding: 10px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.09);
+
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-items:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-items {
+  color: #fff;
+}
+
+a.dropdown-links:active,
+a.dropdown-links {
+  text-decoration: none;
+  color: #fff;
+}
+
+a.dropdown-links:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.burger-contact {
+  display: none;
+}
+
+.burger-socials {
+  display: none;
+}
+
+.nav-button {
+  position: fixed;
+  display: none;
+  border: none;
+  background-color: unset;
+}
+
+.tour-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 30px;
+  margin-bottom: 100px;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.09);
+
+  color: #fff;
+}
+
+.tour-img {
+  max-width: 350px;
+  max-height: 350px;
+  border-radius: 50px;
+}
+
+.tour-text {
+  margin: 25px 20px 25px 20px;
+}
+
+.order-button {
+  display: block;
+  float: right;
+  align-items: center;
+
+  padding: 15px;
+  background-color: #FFD53F;
+  border-radius: 50px;
+
+  font-size: 22px;
+  color: #483333;
+  letter-spacing: 0.1em;
+  transition: all 500ms ease;
+}
+
+.order-button:hover {
+  box-shadow: inset 0 3px 5px 3px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+footer a {
+  color: #347A5D;
 }
 
 footer a:hover {
   text-decoration: none;
-  color: #347A5D;
+  color: rgba(52, 122, 93, 0.7);
 }
 
-.background {
-  /* Задній фон */
-  position: absolute;
-  width: 1320px;
-  height: 1920px;
-  top: -100px;
-
-  margin: 20px -20px -20px -40px;
-  filter: blur(10px);
-  background: url(/Images/Lake.jpeg);
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
+.footer {
+  padding: 25px 0;
+  background-color: #ffff;
 }
 
-.name {
-  /* Логотип(назва) */
-  position: absolute;
-  width: 140px;
-  height: 50px;
-  left: 100px;
-  top: 20px;
-
-  font-family: 'Lobster';
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 50px;
-
+.foot-elements {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  color: #FFFFFF;
 }
 
-.menu {
-  /* Меню */
-  position: absolute;
-  width: 1280px;
-  height: 100px;
-  left: 0px;
-  top: 0px;
-}
-
-.tours {
-  /* Тури */
-  position: absolute;
-  width: 70px;
-  height: 25px;
-  left: 710px;
-  top: 35px;
-
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.about {
-  /* Про нас */
-  position: absolute;
-  width: 110px;
-  height: 25px;
-  left: 800px;
-  top: 35px;
-
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.contact {
-  /* Контакти */
-  position: absolute;
-  width: 130px;
-  height: 25px;
-  left: 930px;
-  top: 35px;
-
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.login {
-  /* Увійти */
-  position: absolute;
-  width: 90px;
-  height: 25px;
-  left: 1080px;
-  top: 35px;
-
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.corfu {
-  /* Корфу */
-  position: absolute;
-  width: 1100px;
-  height: 400px;
-  left: 90px;
-  top: 170px;
-
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
-  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.09);
-}
-
-.corfu-island {
-  /* Острів Корфу(Греція) */
-  position: absolute;
-  width: 345px;
-  height: 30px;
-  left: 385px;
-  top: 60px;
-
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  color: #FFFFFF;
-}
-
-.corfu_img {
-  /* Corfu */
-  position: absolute;
-  width: 300px;
-  height: 320px;
-  left: 60px;
-  top: 40px;
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background: url(/Images/Corfu.jpg);
-  border-radius: 50px;
-}
-
-.corfu-text {
-  position: absolute;
-  width: 672px;
-  height: 161px;
-  left: 380px;
-  top: 110px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  color: #FFFFFF;
-}
-
-.corfu-button {
-  position: absolute;
-  width: 240px;
-  height: 60px;
-  right: 50px;
-  top: 300px;
-}
-
-button {
-  border: none;
-  background: #FFD53F;
-  color: #483333;
-  width: 240px;
-  height: 60px;
-  font-weight: 600;
+.foot-nav {
+  line-height: 40px;
   font-size: 20px;
+  align-self: center;
   letter-spacing: 0.1em;
-  border-radius: 300px;
-  position: relative;
-
-  box-shadow: 3px 3px 4px 4px rgba(0, 0, 0, 0.18);
-  box-sizing: border-box;
-  transition: all 500ms ease;
-}
-
-button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.8);
-  box-shadow: inset 0 3px 5px 3px rgba(0, 0, 0, 0.3);
-}
-
-.carpatians {
-  /* Карпати */
-  position: absolute;
-  width: 1100px;
-  height: 400px;
-  left: 100px;
-  top: 725px;
-
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
-  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.09);
-}
-
-.carpatians-ukraine {
-  /* Карпати(Україна) */
-  position: absolute;
-  width: 270px;
-  height: 30px;
-  left: 385px;
-  top: 60px;
-
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  color: #FFFFFF;
-}
-
-.carpatians_img {
-  /* Corfu */
-  position: absolute;
-  width: 300px;
-  height: 320px;
-  left: 60px;
-  top: 40px;
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background: url(/Images/Carpatians.jpg);
-  border-radius: 50px;
-}
-
-.carpatians-text {
-  position: absolute;
-  width: 665px;
-  height: 250px;
-  right: 50px;
-  top: 80px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  color: #FFFFFF;
-}
-
-.carpatians-button {
-  position: absolute;
-  width: 240px;
-  height: 60px;
-  right: 50px;
-  top: 300px;
-}
-
-.iceland {
-  position: absolute;
-  width: 1100px;
-  height: 400px;
-  left: 100px;
-  top: 1275px;
-
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
-  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.09);
-}
-
-.iceland-tour {
-  position: absolute;
-  width: 270px;
-  height: 30px;
-  left: 385px;
-  top: 60px;
-
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  color: #FFFFFF;
-}
-
-.iceland_img {
-  position: absolute;
-  width: 300px;
-  height: 320px;
-  left: 60px;
-  top: 40px;
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background: url(/Images/Iceland.jpg);
-  border-radius: 50px;
-}
-
-.iceland-text {
-  position: absolute;
-  width: 665px;
-  height: 250px;
-  right: 50px;
-  top: 80px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  color: #FFFFFF;
-}
-
-.iceland-button {
-  position: absolute;
-  width: 240px;
-  height: 60px;
-  right: 50px;
-  top: 300px;
-}
-
-footer {
-  /* Footer */
-  position: absolute;
-  width: 1280px;
-  height: 100px;
-  left: 0px;
-  top: 1820px;
-
-  background-color: #FFFFFF;
-}
-
-footer a {
-  color: rgba(52, 122, 93, 0.8);
-}
-
-.foot-menu {
-  /* Footer menu */
-  position: absolute;
-  width: 110px;
-  height: 50px;
-  left: 100px;
-  top: 15px;
-}
-
-.footer li {
-  font-weight: 500;
-  font-size: 13px;
-  list-style-type: none;
-  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .foot-contact {
-  /* Footer contact */
-  position: absolute;
-  font-size: 13px;
-
-  left: 280px;
-  top: 15px;
-  color: #000000;
-}
-
-.fa-instagram {
-  /* Instagram Icon */
-  position: absolute;
-  font-size: 25px;
-  left: 1015px;
-  top: 30px;
-
-  color: #000000;
-}
-
-.fa-facebook {
-  /* Facebook Icon */
-  position: absolute;
-  font-size: 25px;
-  left: 1055px;
-  top: 30px;
-  color: #000000;
-}
-
-.fa-telegram {
-  /* Telegram Icon */
-  position: absolute;
-  font-size: 25px;
-  left: 1085px;
-  top: 30px;
-  color: #000000;
-}
-
-.policy {
-  /* Privacy policy */
-  position: absolute;
-  width: 155px;
-  height: 10px;
-  left: 987px;
-  top: 75px;
-
-  font-weight: 500;
-  font-size: 9px;
-  line-height: 11px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  align-self: center;
   letter-spacing: 0.1em;
-  text-decoration: none;
+}
 
-  color: #000000;
+.foot-socials {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  column-gap: 15px;
+  margin-bottom: 35px;
 }

@@ -1,18 +1,115 @@
 *,
 *:after,
 *:before {
-  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   text-decoration: none;
-  text-align: none;
+  text-align: unset;
   list-style-type: none;
-  letter-spacing: 0.1em;
   box-sizing: border-box;
   outline: none;
   border: none;
   padding: 0;
   margin: 0;
-  transition: .5s ease-in-out;
+}
+
+html {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url(/Images/Lake\ Blur.jpg) no-repeat;
+  background-size: cover;
+}
+
+main {
+  padding-top: 30px;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Lobster', sans-serif;
+  font-size: 40px;
+  color: #fff;
+}
+
+.logo:hover {
+  color: #fff;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-list {
+  display: flex;
+  column-gap: 50px;
+  margin: 0 auto;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #fff;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  line-height: 40px;
+  padding: 10px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.09);
+  backdrop-filter: blur(5px);
+
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-items:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-items {
+  color: #fff;
 }
 
 a.dropdown-links:active,
@@ -26,519 +123,75 @@ a.dropdown-links:hover {
   color: rgba(255, 255, 255, 0.7);
 }
 
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-a:hover {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-nav a:hover {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
-.container {
-  max-width: 1140px;
-  padding: 0 30px;
-  margin: 0 auto;
-}
-
-.main {
-  padding-top: 30px;
-  width: 100%;
-
-  z-index: -1;
-
-  background: url(/Images/Lake.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.header-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 100px;
-}
-
-.logo {
-  font-family: 'Lobster';
-  font-size: 40px;
-  letter-spacing: 0.1em;
-
-  color: #ffff;
-}
-
-.nav-list {
-  display: flex;
-  column-gap: 50px;
-  padding-top: 30px;
-  color: #fff;
-  margin: 0 auto;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.nav-items:hover {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  /* justify-content: center; */
-}
-
-.dropdown-content {
+.burger-contact {
   display: none;
-  position: absolute;
-  font-size: 18px;
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
-  line-height: 40px;
-  padding: 10px;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.09);
-  z-index: 1;
-  text-decoration: none;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover {
-  display: block;
-}
-
-.nav-items {
-  color: #fff;
-}
-
-.menu-btn {
+.burger-socials {
   display: none;
-  align-items: center;
-  position: absolute;
-  padding-top: 7px;
-
-  width: 35px;
-  height: 30px;
-  cursor: pointer;
-  z-index: 1;
 }
 
-.menu-btn>span,
-.menu-btn>span::before,
-.menu-btn>span::after {
-  display: block;
-  margin-right: 50px;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #ffff;
-  transition-duration: .25s;
-}
-
-.menu-btn>span::before {
-  content: '';
-  top: -8px;
-}
-
-.menu-btn>span::after {
-  content: '';
-  top: 8px;
-}
-
-.menubox {
-  display: block;
+.nav-button {
   position: fixed;
-  visibility: hidden;
-  z-index: 1;
-  top: 0;
-  left: -100%;
-  width: 300px;
-  height: 100%;
-  margin: 0;
-  padding: 80px 0;
-  list-style: none;
-  background-color: #ffff;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  transition-duration: .25s;
-}
-
-.menu-item {
-  display: block;
-  padding: 12px 24px;
-  color: #333;
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: none;
-  transition-duration: .25s;
-}
-
-.menu-item:hover {
-  background-color: #CFD8DC;
-}
-
-
-#menu-toggle {
-  opacity: 0;
-}
-
-#menu-toggle:checked~.menu-btn>span {
-  transform: rotate(45deg);
-}
-
-#menu-toggle:checked~.menu-btn>span::before {
-  top: 0;
-  transform: rotate(0);
-}
-
-#menu-toggle:checked~.menu-btn>span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-
-#menu-toggle:checked~.menubox {
-  visibility: visible;
-  left: 0;
+  display: none;
+  border: none;
+  background-color: unset;
 }
 
 .login-form {
-  display: block;
+  display: flex;
+  flex-direction: column;
   max-width: 400px;
-  max-height: 450px;
-  margin: 0 auto;
+  max-height: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 110px;
   padding: 50px;
+  font-size: 18px;
 
-  border-radius: 30px;
+  border-radius: 50px;
   background: rgba(0, 0, 0, 0.3);
   box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.09);
 }
 
 label {
-  font-size: 16px;
-  color: #fff;
   line-height: 40px;
+  letter-spacing: 0.1em;
+
+  color: #FFF;
 }
 
 input {
-  /* border: none; */
   background: none;
   outline: none !important;
   padding: 10px;
-  font-size: 16px;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  border-radius: 50px;
 
   background: rgba(255, 255, 255, 0.3);
-
-  border-radius: 30px;
-}
-
-input::placeholder {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-input:focus {
-  padding: 10px;
-
-}
-
-input[type=submit] {
-  margin-top: 10px;
-  margin-left: 50px;
-  background: none;
-  color: #FFF;
-}
-
-input[type=reset] {
-  /* margin-top: 10px; */
-  margin-left: 50px;
-  background: none;
-  color: #FFF;
-}
-
-/* 
-.background {
-  
-  position: absolute;
-  width: 1320px;
-  height: 900px;
-  top: -100px;
-
-  margin: 20px -20px -20px -40px;
-  filter: blur(10px);
-  background: url(/Images/Lake.jpeg);
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
-
-.name {
-
-  position: absolute;
-  width: 140px;
-  height: 50px;
-  left: 100px;
-  top: 20px;
-
-  font-family: 'Lobster';
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 50px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  color: #FFFFFF;
-}
-
-.menu {
-
-  position: absolute;
-  width: 1280px;
-  height: 100px;
-  left: 0px;
-  top: 0px;
-}
-
-.tours {
- 
-  position: absolute;
-  width: 70px;
-  height: 25px;
-  left: 710px;
-  top: 35px;
-
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.about {
-
-  position: absolute;
-  width: 110px;
-  height: 25px;
-  left: 800px;
-  top: 35px;
-
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.contact {
-
-  position: absolute;
-  width: 130px;
-  height: 25px;
-  left: 930px;
-  top: 35px;
-
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.login {
-  /* Увійти 
-position: absolute;
-width: 90px;
-height: 25px;
-left: 1080px;
-top: 35px;
-
-font-weight: 600;
-font-size: 18px;
-line-height: 24px;
-
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: rgba(255, 255, 255, 0.8);
-}
-
-form {
-  position: absolute;
-  width: 350px;
-  height: 440px;
-  left: 465px;
-  top: 180px;
-
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
-  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.09);
-}
-
-label {
-  left: 40px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  display: block;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-  position: absolute;
-
-  color: #FFFFFF;
-}
-
-input {
-  border: none;
-  background: none;
-  outline: none !important;
 }
 
 input::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.user-name {
-  position: absolute;
-  top: 40px;
-}
-
-input[type=name] {
-  position: absolute;
-  display: block;
-  width: 180px;
-  height: 30px;
+input:focus {
   padding: 10px;
-
-  left: 35px;
-  top: 75px;
-
-  background: rgba(255, 255, 255, 0.3);
-  border: none;
-  border-radius: 50px;
-}
-
-.user-email {
-  position: absolute;
-  top: 115px;
-}
-
-input[type=email] {
-  /* Rectangle 4 
-position: absolute;
-display: block;
-width: 180px;
-height: 30px;
-left: 35px;
-top: 150px;
-padding: 10px;
-
-background: rgba(255, 255, 255, 0.3);
-border-radius: 50px;
-}
-
-.user-password {
-  position: absolute;
-  top: 190px;
-}
-
-input[type=password] {
-  position: absolute;
-  width: 180px;
-  height: 30px;
-  left: 35px;
-  padding: 10px;
-
-  background: rgba(255, 255, 255, 0.3);
-  border: none;
-  border-radius: 50px;
-}
-
-.password {
-  position: absolute;
-  top: 220px;
-}
-
-.user-password-repeat {
-  position: absolute;
-  top: 260px;
-}
-
-.repeat-pass {
-  position: absolute;
-  top: 290px;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 input[type=submit] {
-  position: absolute;
-  width: 230px;
-  height: 20px;
-  right: 20px;
-  top: 355px;
-  border: none;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  color: #FFFFFF;
+  cursor: pointer;
+  text-align: right;
+  margin-top: 10px;
+  background: none;
+  color: #FFF;
 }
 
 input[type=reset] {
-  position: absolute;
-  width: 100px;
-  height: 20px;
-  right: 85px;
-  top: 380px;
-  border: none;
+  cursor: pointer;
+  text-align: right;
   background: none;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  color: #FFFFFF;
+  color: #FFF;
 }
-
-*/

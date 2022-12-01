@@ -1,60 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="ua">
 
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/CSS/form.css">
-  <link rel="shortcut icon" href="/Images/Logo.png">
   <meta charset="utf-8">
-  <title>МійТур|Форма</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>МійТур</title>
+  <link rel="shortcut icon" href="/Images/Logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@500&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/64ed6564b5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/CSS/form.css">
+  <link rel="stylesheet" href="/CSS/media.css">
 </head>
 
 <body>
-  <div class="background"></div>
-  
-  <!-- Назва та верхнє меню -->
-  <nav class="menu">
-    <a class="name" href="/index.html">МійТур</a>
-    <a class="tours" href="/Pages/tours.html">ТУРИ</a></li>
-    <a class="about" href="/Pages/about.html">ПРО НАС</a></li>
-    <a class="contact" href="/Pages/contact.html">КОНТАКТИ</a></li>
-    <a class="login" href="/Pages/login.html">УВІЙТИ</a></li>
-  </nav>
+  <main>
+    <!-- Назва та верхнє меню -->
+    <div class="container">
+      <div class="header-nav">
+        <a class="logo" href="/index.html">МійТур</a>
+        <nav class="nav" id="nav">
+          <ul class="nav-list">
+            <li class="dropdown">
+              <a class="nav-items" href="/Pages/tours.html">Тури <i class="fa-solid fa-angle-down"></i></a>
+              <div class="dropdown-content">
+                <a class="dropdown-links" href="/Pages/tours.html#idCorfu">Корфу</a>
+                <a class="dropdown-links" href="/Pages/tours.html#idCarpatians">Карпати</a>
+                <a class="dropdown-links" href="/Pages/tours.html#idIceland">Ісландія</a>
+              </div>
+            </li>
+            <li><a class="nav-items" href="/Pages/about.html">Про нас</a></li>
+            <li><a class="nav-items" href="/Pages/contact.html">Контакти</a></li>
+            <li><a class="nav-items" href="/Pages/login.html">Увійти</a></li>
 
-  <!-- Форма оформлення туру -->
-  <form class="order-form" action="">
-    <label class="user-name" for="name">Ім'я</label><br>
-    <input type="name" placeholder="Введіть ім'я" name="name" required><br>
+            <ul class="burger-contact">
+              <li><a href="tel:+38050000000"><i class="fa fa-phone" aria-hidden="true"></i> +380
+                  (50)
+                  000
+                  000</a>
+              </li>
+              <li><a href="tel:+38095000000"><i class="fa fa-phone" aria-hidden="true"></i> +380
+                  (95)
+                  000
+                  000</a>
+              </li>
+              <li><a href="tel:+38067000000"><i class="fa fa-phone" aria-hidden="true"></i> +380
+                  (67)
+                  000
+                  000</a>
+              </li>
+            </ul>
 
-    <label class="user-surname" for="name">Прізвище</label><br>
-    <input type="surname" placeholder="Введіть прізвище" name="name" required><br>
+            <ul class="burger-socials">
+              <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://web.telegram.org/"><i class="fa fa-telegram"></i></a></li>
+            </ul>
 
-    <label class="user-email" for="email">Електронна пошта</label><br>
-    <input type="email" placeholder="Введіть пошту" name="email"><br>
+          </ul>
 
-    <label class="user-tel" for="tel">Моб.телефон</label><br>
-    <input type="tel" placeholder="Введіть номер" name="tel" required><br>
+          <button id="nav-btn" class="nav-button">
+            <img id="nav-btn-img" src="/Images/Burger.svg" alt="Nav button">
+          </button>
+        </nav>
+      </div>
 
-    <label class="choose-tour" for="tours">Виберіть тур</label><br>
-    <select name="tours" id="tours" size="1" required>
-      <option value="1">Острів Корфу</option>
-      <option value="2">Карпати</option>
-      <option value="3">Ісландія</option>
-    </select><br>
+      <!-- Форма оформлення туру -->
+      <section class="form-section">
+        <form class="order-form" action="">
+          <label for="name">Ім'я</label>
+          <input type="name" placeholder="Введіть ім'я" name="name" required>
 
-    <label class="people" for="people">Кількість людей </label><br>
-    <input type="number" name="people" min="1" max="20" maxlength="20"><br>
+          <label for="name">Прізвище</label>
+          <input type="surname" placeholder="Введіть прізвище" name="name" required>
 
-    <label class="comment" for="comment">Додайте коментар за бажанням</label><br>
-    <textarea id="comment" name="comment" maxlength="150"></textarea>
-    <p class="max-message">Макс. 150 символів</p>
+          <label for="email">Електронна пошта</label>
+          <input type="email" placeholder="Введіть пошту" name="email">
 
-    <input type="submit" value="Замовити тур"><br>
-    <input type="reset" value="Очистити форму"><br>
-    <p class="call-message">Після заповнення форми ми вам передзвонимо для підтверження даних</p>
-  </form>
+          <label for="tel">Моб.телефон</label>
+          <input type="tel" placeholder="Введіть номер" name="tel" required>
 
+          <label for="tours">Виберіть тур</label>
+          <select name="tours" id="tours" size="1" required>
+            <option value="1">Острів Корфу</option>
+            <option value="2">Карпати</option>
+            <option value="3">Ісландія</option>
+          </select>
+
+          <label for="date">Дата поїздки</label>
+          <input class="date" type="date" name="date" required>
+
+          <label for="people">Кількість людей</label>
+          <input class="people-count" type="number" name="people" min="1" max="20" maxlength="20" required>
+
+          <input class="form-order-button" type="submit" value="Замовити тур">
+          <input class="form-reset" type="reset" value="Очистити форму">
+          <p class="call-message">Після заповнення форми ми вам передзвонимо для підтверження даних</p>
+        </form>
+
+        <div class="comment">
+          <label for="comment">Додайте коментар за бажанням</label>
+          <textarea id="comment" name="comment" maxlength="150"></textarea>
+        </div>
+      </section>
+  </main>
+  <script src="/js/main.js"></script>
 </body>
 
 </html>
