@@ -1,14 +1,14 @@
 @media (max-width: 1024px) {
-    .topbutton {
-        display: none;
-    }
-
     .nav-list {
         display: none;
     }
 
     .nav.open .nav-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
         position: fixed;
         top: 0;
@@ -17,13 +17,19 @@
         width: 50%;
         z-index: 1;
         padding: 150px 30px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
 
         background-color: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
     }
 
     .nav-list {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -31,6 +37,8 @@
         display: block;
         position: static;
         z-index: 2;
+        -webkit-box-pack: right;
+        -ms-flex-pack: right;
         justify-content: right;
     }
 
@@ -42,13 +50,18 @@
     }
 
     .burger-socials {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         font-size: 30px;
+        -webkit-column-gap: 15px;
+        -moz-column-gap: 15px;
         column-gap: 15px;
     }
 
     .dropdown-content {
         display: none;
+        background: unset;
     }
 
     .dropdown-links {
@@ -75,6 +88,9 @@
     }
 
     .tour-block {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -101,18 +117,22 @@
     }
 
     .about-content {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
     .form-section {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
-
-    /* .form-order-button {
-        align-self: center;
-    } */
 
     footer {
         display: none;

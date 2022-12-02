@@ -1,3 +1,14 @@
+:root {
+  --white: #f2f2f2;
+  --white-hover: rgba(255, 255, 255, 0.7);
+  --dropdown-bckgrnd: rgba(0, 0, 0, 0.3);
+  --shadow: rgba(0, 0, 0, 0.10);
+  --black-transparent: rgba(0, 0, 0, 0.4);
+  --input-bckgrnd: rgba(255, 255, 255, 0.3);
+  --input-placeholder: rgba(0, 0, 0, 0.3);
+  --input-focus: rgba(0, 0, 0, 0.6);
+}
+
 *,
 *:after,
 *:before {
@@ -5,6 +16,7 @@
   text-decoration: none;
   text-align: unset;
   list-style-type: none;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: none;
   border: none;
@@ -18,12 +30,12 @@ html {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
 }
 
 a:hover {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--white-hover);
 }
 
 body {
@@ -35,6 +47,7 @@ body {
   z-index: -1;
   background: url(/Images/Lake\ Blur.jpg) no-repeat;
   background-size: cover;
+  color: var(--white);
 }
 
 main {
@@ -48,35 +61,45 @@ main {
 }
 
 .header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .logo {
   font-family: 'Lobster', sans-serif;
   font-size: 40px;
-  color: #fff;
+  color: var(--white);
 }
 
 .logo:hover {
-  color: #fff;
+  color: var(--white);
 }
 
 nav a:hover {
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
 }
 
 .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-column-gap: 50px;
+  -moz-column-gap: 50px;
   column-gap: 50px;
   margin: 0 auto;
   font-size: 20px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
-  color: #fff;
+  color: var(--white);
 }
 
 .dropdown {
@@ -89,14 +112,14 @@ nav a:hover {
   z-index: 1;
   text-decoration: none;
   font-size: 18px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--dropdown-bckgrnd);
   border-radius: 30px;
   line-height: 40px;
   padding: 10px;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.09);
-  backdrop-filter: blur(5px);
+  -webkit-box-shadow: 10px 10px 5px var(--shadow);
+  box-shadow: 10px 10px 5px var(--shadow);
 
-  color: #fff;
+  color: var(--white);
 }
 
 .dropdown:hover .dropdown-content {
@@ -105,22 +128,18 @@ nav a:hover {
 
 .nav-items:hover {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.nav-items {
-  color: #fff;
+  color: var(--white-hover)
 }
 
 a.dropdown-links:active,
 a.dropdown-links {
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
 }
 
 a.dropdown-links:hover {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--white-hover);
 }
 
 .burger-contact {
@@ -138,27 +157,38 @@ a.dropdown-links:hover {
   background-color: unset;
 }
 
+.back-btn {
+  background-color: unset;
+  text-align: right;
+  font-size: 30px;
+  color: var(--white);
+}
+
 .login-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   max-width: 400px;
   max-height: 480px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 110px;
-  padding: 50px;
+  padding: 30px;
   font-size: 18px;
 
   border-radius: 50px;
-  background: rgba(0, 0, 0, 0.3);
-  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.09);
+  background: var(--black-transparent);
+  -webkit-box-shadow: 20px 20px 5px var(--shadow);
+  box-shadow: 20px 20px 5px var(--shadow);
 }
 
 label {
   line-height: 40px;
   letter-spacing: 0.1em;
-
-  color: #FFF;
 }
 
 input {
@@ -169,16 +199,32 @@ input {
   letter-spacing: 0.1em;
   border-radius: 50px;
 
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--input-bckgrnd);
+}
+
+input::-webkit-input-placeholder {
+  color: var(--input-placeholder);
+}
+
+input::-moz-placeholder {
+  color: var(--input-placeholder);
+}
+
+input:-ms-input-placeholder {
+  color: var(--input-placeholder);
+}
+
+input::-ms-input-placeholder {
+  color: var(--input-placeholder);
 }
 
 input::placeholder {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--input-placeholder);
 }
 
 input:focus {
   padding: 10px;
-  color: rgba(0, 0, 0, 0.6);
+  color: var(--input-focus);
 }
 
 input[type=submit] {
@@ -186,12 +232,12 @@ input[type=submit] {
   text-align: right;
   margin-top: 10px;
   background: none;
-  color: #FFF;
+  color: var(--white)
 }
 
 input[type=reset] {
   cursor: pointer;
   text-align: right;
   background: none;
-  color: #FFF;
+  color: var(--white)
 }
