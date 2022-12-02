@@ -158,6 +158,7 @@ a.dropdown-links:hover {
 }
 
 .back-btn {
+  cursor: pointer;
   background-color: unset;
   text-align: right;
   font-size: 30px;
